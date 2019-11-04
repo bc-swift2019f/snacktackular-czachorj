@@ -41,7 +41,7 @@ class SpotsListViewController: UIViewController {
     func signIn() {
         let providers: [FUIAuthProvider] = [FUIGoogleAuth()]
         if authUI.auth?.currentUser == nil {
-            self.authUI?.providers = providers
+            self.authUI.providers = providers
             present(authUI.authViewController(), animated: true, completion: nil)
         } else {
             tableView.isHidden = false
