@@ -20,6 +20,16 @@ class ReviewTableViewController: UITableViewController {
     @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var buttonsBackgroundView: UIView!
     @IBOutlet weak var reviewDateLabel: UILabel!
+    @IBOutlet var starButtonCollection: [UIButton]!
+    
+    var rating = 0 {
+        didSet {
+            for starButton in starButtonCollection {
+                let image = UIImage(named: (starButton.tag < rating ? "star-filled": "star-empty"))
+                starButton.setImage(image, for: .normal)
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +46,12 @@ class ReviewTableViewController: UITableViewController {
             navigationController?.popViewController(animated: true)
         }
     }
+    
+    @IBAction func starButtonPressed(_ sender: UIButton) {
+        rating = sender.tag + 1
+        
+    }
+    
     
     @IBAction func returnTitleDonePressed(_ sender: Any) {
     }
