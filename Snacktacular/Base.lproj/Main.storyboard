@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="375.19999999999999" y="35.467980295566505"/>
         </scene>
-        <!--Lookup Place-->
+        <!--Spot Detail View Controller-->
         <scene sceneID="uGH-1g-fh3">
             <objects>
-                <viewController title="Lookup Place" id="L7d-5i-Cie" customClass="SpotDetailViewController" customModule="Snacktacular" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Spot Detail View Controller" id="L7d-5i-Cie" customClass="SpotDetailViewController" customModule="Snacktacular" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="atJ-Va-hnz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

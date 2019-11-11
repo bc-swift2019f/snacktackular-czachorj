@@ -25,6 +25,7 @@ class SpotDetailViewController: UIViewController {
     
     var spot: Spot!
     let regionDistance: CLLocationDistance = 750 // 750 meters/half a mile
+    var reviews: [Review] = []
     
     var locationManager: CLLocationManager!
     var currentLocation: CLLocation!
@@ -84,6 +85,27 @@ class SpotDetailViewController: UIViewController {
             dismiss(animated: true, completion: nil)
         } else {
             navigationController?.popViewController(animated: true)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        spot.name = nameField.text!
+        spot.address = addressField.text!
+        switch segue.identifier ?? "" {
+        case "AddReview" :
+            let navigationController = segue.destination as! UINavigationController
+            let destination = navigationController.viewControllers.first as! ReviewTableViewController
+            destination.spot = spot
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                tableView.deselectRow(at: selectedIndexPath, animated: true)
+            }
+        case "ShowReview" :
+            let destination = segue.destination as! ReviewTableViewController
+            destination.spot = spot
+            let selectedIndexPath = tableView.indexPathForSelectedRow!
+            destination.review = reviews[selectedIndexPath.row]
+        default:
+            print("Did not have a segue")
         }
     }
     
