@@ -21,7 +21,7 @@ class SpotReviewsTableViewCell: UITableViewCell {
             reviewTextLabel.text = review.text
             for starImage in starImageCollection {
                 let image = UIImage(named: (starImage.tag < review.rating ? "star-filled": "star-empty"))
-                starimage.Image = image
+                image = starImage.Image
             }
         }
     }
