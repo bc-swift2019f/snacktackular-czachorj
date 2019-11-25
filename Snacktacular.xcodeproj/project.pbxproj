@@ -27,6 +27,10 @@
 		4C2A13072379C43700D8D9FE /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A13062379C43700D8D9FE /* Reviews.swift */; };
 		4C2A13092379DA1100D8D9FE /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A13082379DA1100D8D9FE /* Photo.swift */; };
 		4C2A130B2379DAAD00D8D9FE /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A130A2379DAAD00D8D9FE /* Photos.swift */; };
+		4CC12A53238B88DA002DB88C /* SnackUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC12A52238B88DA002DB88C /* SnackUser.swift */; };
+		4CC12A55238B8926002DB88C /* SnackUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC12A54238B8926002DB88C /* SnackUserTableViewCell.swift */; };
+		4CC12A57238B895C002DB88C /* SnackUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC12A56238B895C002DB88C /* SnackUsers.swift */; };
+		4CC12A59238B89B8002DB88C /* SnackUsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC12A58238B89B8002DB88C /* SnackUsersListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,10 @@
 		4C2A13062379C43700D8D9FE /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
 		4C2A13082379DA1100D8D9FE /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		4C2A130A2379DAAD00D8D9FE /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		4CC12A52238B88DA002DB88C /* SnackUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackUser.swift; sourceTree = "<group>"; };
+		4CC12A54238B8926002DB88C /* SnackUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackUserTableViewCell.swift; sourceTree = "<group>"; };
+		4CC12A56238B895C002DB88C /* SnackUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackUsers.swift; sourceTree = "<group>"; };
+		4CC12A58238B89B8002DB88C /* SnackUsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackUsersListViewController.swift; sourceTree = "<group>"; };
 		62CD763E052C953F7C4002CA /* Pods-Snacktacular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.debug.xcconfig"; path = "Target Support Files/Pods-Snacktacular/Pods-Snacktacular.debug.xcconfig"; sourceTree = "<group>"; };
 		C3323DBDEBC716569D779C26 /* Pods-Snacktacular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.release.xcconfig"; path = "Target Support Files/Pods-Snacktacular/Pods-Snacktacular.release.xcconfig"; sourceTree = "<group>"; };
 		EC142A71B8CE0E57EE1CAE0E /* Pods_Snacktacular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snacktacular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,12 +112,16 @@
 				4C2A13062379C43700D8D9FE /* Reviews.swift */,
 				4C2A13042379B1C300D8D9FE /* Review.swift */,
 				4C2A130A2379DAAD00D8D9FE /* Photos.swift */,
+				4CC12A52238B88DA002DB88C /* SnackUser.swift */,
+				4CC12A56238B895C002DB88C /* SnackUsers.swift */,
+				4CC12A58238B89B8002DB88C /* SnackUsersListViewController.swift */,
 				4C2A13082379DA1100D8D9FE /* Photo.swift */,
 				3E8390E1206597F600512DEA /* SpotsListViewController.swift */,
 				3E0F960920659D9000AE450D /* SpotsTableViewCell.swift */,
 				3E0F960B2065A17500AE450D /* SpotDetailViewController.swift */,
 				3E0F960D2065AB6400AE450D /* SpotReviewsTableViewCell.swift */,
 				3E0F960F2065AC1A00AE450D /* SpotPhotosCollectionViewCell.swift */,
+				4CC12A54238B8926002DB88C /* SnackUserTableViewCell.swift */,
 				4C2A13022378662E00D8D9FE /* ReviewTableViewController.swift */,
 				4C2A12FE2376094C00D8D9FE /* Double+roundingTo.swift */,
 				4C2A130023785A4D00D8D9FE /* UIView+addBorder.swift */,
@@ -315,13 +327,17 @@
 				3E0F960C2065A17500AE450D /* SpotDetailViewController.swift in Sources */,
 				3E0F960E2065AB6400AE450D /* SpotReviewsTableViewCell.swift in Sources */,
 				4C2A13032378662E00D8D9FE /* ReviewTableViewController.swift in Sources */,
+				4CC12A55238B8926002DB88C /* SnackUserTableViewCell.swift in Sources */,
 				4C2A13052379B1C300D8D9FE /* Review.swift in Sources */,
+				4CC12A53238B88DA002DB88C /* SnackUser.swift in Sources */,
 				4C2A130123785A4D00D8D9FE /* UIView+addBorder.swift in Sources */,
 				3E0F960A20659D9000AE450D /* SpotsTableViewCell.swift in Sources */,
 				4C2A12F9236C959900D8D9FE /* Spot.swift in Sources */,
 				3E8390E0206597F600512DEA /* AppDelegate.swift in Sources */,
+				4CC12A57238B895C002DB88C /* SnackUsers.swift in Sources */,
 				4C2A12FF2376094C00D8D9FE /* Double+roundingTo.swift in Sources */,
 				4C2A12FB236C969800D8D9FE /* Spots.swift in Sources */,
+				4CC12A59238B89B8002DB88C /* SnackUsersListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
